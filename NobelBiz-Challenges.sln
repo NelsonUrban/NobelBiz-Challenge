@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NobelBiz-ConsoleApp", "NobelBiz-ConsoleApp\NobelBiz-ConsoleApp.csproj", "{9ECD5517-5B5F-4CF0-A751-52A4D6024D28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogAnalysisApp", "LogAnalysisApp\LogAnalysisApp.csproj", "{BAF955A8-EA6E-4602-AA3D-852609EA5949}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{B56D92F7-B87F-47C5-93F3-D8232B1F7D15}"
+	ProjectSection(SolutionItems) = preProject
+		StoreProcedure.sql = StoreProcedure.sql
+		TransactQuery.sql = TransactQuery.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{F0E3898D-71B7-426E-B30B-E15785A1E98F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ECD5517-5B5F-4CF0-A751-52A4D6024D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECD5517-5B5F-4CF0-A751-52A4D6024D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECD5517-5B5F-4CF0-A751-52A4D6024D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECD5517-5B5F-4CF0-A751-52A4D6024D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF955A8-EA6E-4602-AA3D-852609EA5949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF955A8-EA6E-4602-AA3D-852609EA5949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF955A8-EA6E-4602-AA3D-852609EA5949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF955A8-EA6E-4602-AA3D-852609EA5949}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {716F86A4-43B3-4C32-A826-6E22BD7AE050}
+	EndGlobalSection
+EndGlobal
