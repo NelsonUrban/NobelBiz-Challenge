@@ -1,4 +1,4 @@
-# Coding Challenge - NobelBiz
+# Recruitment Assessment - NobelBiz
 
 This coding challenge project demonstrates skills in .NET Core 6, SQL, HTML, JavaScript, and CSS. 
 
