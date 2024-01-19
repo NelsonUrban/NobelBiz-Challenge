@@ -1,0 +1,92 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__content {
+    padding: 1rem 10rem;
+}
+
+.customer__form,
+.agent__script,
+.table__information {
+    padding: 1rem;
+}
+
+.main__content--title {
+    text-align: center;
+}
+
+.customer__form--section {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    margin-bottom: 2rem;
+}
+
+.customer__form--controls,
+.customer__form--controls input {
+    width: 100%;
+}
+
+.customer__form--controls input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+    border: 0.125rem solid lightgray;
+}
+
+.customer__form--controls label {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.agent__script {
+    font-size: 1.5rem;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__information--table thead tr th {
+    background-color: lightgray;
+    border-bottom: 3px solid lightgray;
+}
+
+.table__information--table tbody tr td {
+    border-bottom: 1px solid lightgray;
+}
+
+table a,
+table a:visited {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table__information--table thead tr th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+.table__information--table tbody tr td{
+    text-align: center;
+    padding: 1rem;
+}
+
+.table__information--next10 {
+    background-color: lightgray;
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}

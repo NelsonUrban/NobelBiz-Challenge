@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main__content">
+        <h1 class="main__content--title">Campaign XYZ</h1>
+        <form class="customer__form">
+            <div class="customer__form--section">
+                <div class="customer__form--controls">
+                    <Label for="firstname">First Name</Label>
+                    <input type="text" id="firstname" name="firstname" />
+                </div>
+                <div class="customer__form--controls">
+                    <Label for="lastname">Last Name</Label>
+                    <input type="text" id="lastname" name="lastname" />
+                </div>
+                <div class="customer__form--controls">
+                    <Label for="city">City</Label>
+                    <input type="text" id="city" name="city" />
+                </div>
+            </div>
+            <div class="customer__form--section">
+                <div class="customer__form--controls">
+                    <Label for="state">State</Label>
+                    <input type="text" id="state" name="state" />
+                </div>
+                <div class="customer__form--controls">
+                    <Label for="zipcode">Zip</Label>
+                    <input type="text" maxlength="10" id="zipcode" name="zipcode" />
+                </div>
+                <div class="customer__form--controls">
+                    <Label for="company">Company</Label>
+                    <input type="text" id="company" name="company" />
+                </div>
+            </div>
+        </form>
+        <div class="agent__script">
+            <ul>
+                <li><b>Agent:</b> Thank you for calling Nobelcareers. My name is Nelson Urban. May I have your name, please?</li>
+                <li><b>Customer:</b> Hi, this is <span class="spCustomer">[Customer name]</span>.</li>
+                <li><b>Agent:</b>: Thank you, <span class="spCustomer">[Customer name]</span>. How can I assist you today?</li>
+            </ul>
+        </div>
+        <div class="table__information">
+            <table class="table__information--table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Topics</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button class="table__information--next10">Load next 10 rows</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
