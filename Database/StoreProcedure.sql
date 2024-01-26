@@ -4,21 +4,21 @@
     @FinalId INT = 0
 AS
 BEGIN
-    SELECT
-        C.IDCAMPANYA  AS CampaignID,
+      SELECT
+        C.IDCAMPANYA AS CampaignID,
         C.Nombre AS CampaignName,
         U.IDUSUARIO AS AgentID,
         U.Nombre AS AgentName,
         U.LOGIN AS AgentLogin,
         COUNT(T.idTransaccion) AS TotalTransactions,
-        SUM(CASE WHEN T.tCreacion BETWEEN C.tInicial AND C.tFinal THEN 1 ELSE 0 END) AS TotalTransactionsByCampaignId
+        SUM(DATEDIFF(MINUTE, C.tInicio, C.tFinal)) AS TotalTimeInMinutes
     FROM
         TRANSACCION T
     INNER JOIN
-        USUARIO U ON T.IDUSUARIO = U.IDUSUARIO
+        USUARIO U ON T.IDAGENTE = U.IDUSUARIO
     INNER JOIN
         CAMPANYA C ON T.IDCAMPANYA = C.IDCAMPANYA
-    WHERE
+   WHERE
         ((C.IDCAMPANYA = @CampaignId)
         OR (U.IDUSUARIO = @AgentId)
         OR (T.idFinal = @FinalId))
